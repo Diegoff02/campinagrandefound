@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="actions.js"></script>
+
 </head>
 <body>
     <!--Mains bar-->
@@ -20,39 +25,55 @@
     </header> 
     <main><!--Barra Principal de rolagem-->
         <div id="barra-rolagem">
-            <h3 id="titulo-barra" >CONHEÇA CAMPINA GRANDE</h3>                     
+            <h3 id="titulo-barra" >CAMPINA GRANDE <span id="subtitulo-barrarolagem" >FOUND</span></h3>                     
         </div>
         <!--First Post-->
         <section>
-            <div id="post1" class="defaults-post">          
-                <a id="text-post1" class="links-posts" href="#">AÇUDE VELHO</a>
-                <a class="links-posts" href="#"><img id="img-post1" class="img-post" src="https://media-cdn.tripadvisor.com/media/photo-s/09/f4/1f/9e/acude-novo-parque-evaldo.jpg"></a>
+            <div id="barra-firstposts">
+                <div id="style-lateral">
+                    <h2 id="style-laterallegend">PONTOS<br>TURÍSTICOS</h2>
+                </div>
+                <div id="post1" class="defaults-post">          
+                    <a id="text-post1" class="links-posts" href="#">AÇUDE VELHO</a>
+                    <a class="links-posts" href="#"><img id="img-post1" class="img-post" src="https://media-cdn.tripadvisor.com/media/photo-s/09/f4/1f/9e/acude-novo-parque-evaldo.jpg"></a>
+                </div>
+                <div id="post2" class="defaults-post">
+                    <a id="text-post2" class="links-posts" href="#">AÇUDE NOVO</a>
+                    <a class="links-posts" href="#"><img id="img-post2" class="img-post" src="https://portalcorreio.com.br/portalcorreio/arquivos/2023/08/5d97b2b8ded9d1b45b3610a14123454c.jpeg"></a>
+                </div>
+                <div id="post3" class="defaults-post">
+                    <a id="text-post3" class="links-posts" href="#">PARQUE DO POVO</a>
+                    <a class="links-posts" href="#"><img id="img-post3" class="img-post" src="https://jornaldaparaiba.com.br/wp-content/uploads/2023/06/pontos-turisticos-campina-grande-parque-do-povo.jpg"></a>
+                </div>
             </div>
-            <div id="post2" class="defaults-post">
-                <a id="text-post2" class="links-posts" href="#">AÇUDE NOVO</a>
-                <a class="links-posts" href="#"><img id="img-post2" class="img-post" src="https://portalcorreio.com.br/portalcorreio/arquivos/2023/08/5d97b2b8ded9d1b45b3610a14123454c.jpeg"></a>
-            </div>
-            <div id="post3" class="defaults-post">
-                <a id="text-post3" class="links-posts" href="#">PARQUE DO POVO</a>
-                <a class="links-posts" href="#"><img id="img-post3" class="img-post" src="https://jornaldaparaiba.com.br/wp-content/uploads/2023/06/pontos-turisticos-campina-grande-parque-do-povo.jpg"></a>
-            </div>
-            <div id="post4" class="defaults-post">
-                <a id="text-post4" class="links-posts" href="#">ESTÁTUAS</a>
-                <a class="links-posts" href="#"><img id="img-post4" class="img-post" src="https://jornaldaparaiba.com.br/wp-content/uploads/2023/06/luiz-gonzaga-farra-da-bodega-800x600.jpg"></a>
-            </div>
-            <div id="post5" class="defaults-post">
-                <a id="text-post5" class="links-posts" href="#">MUSEUS</a>
-                <a class="links-posts" href="#"><img id="img-post5" class="img-post" src="https://portalcorreio.com.br/portalcorreio/arquivos/2022/05/eff99352da9aa359f20d6bd9a2dc1127.jpg"></a>
-            </div>
-            <div id="post6" class="defaults-post">
-                <a id="text-post6" class="links-posts" href="#">RESTAURANTES</a>
-                <a class="links-posts" href="#"><img id="img-post6" class="img-post" src="https://franchisespace.ru/wp-content/uploads/2020/09/dominos_pizza.jpg"></a>
-            </div>   
         </section>
+        <!--BARRA DE INFORMAÇOES SOBRE A CIDADE-->
+        <section>
+            <div id="bg-infos1">
+                <h3 id="titulo-info1">AÇUDE VELHO</h3>
+                <h4 id="text-info1"><cite>"O Açude Velho foi o primeiro açude da cidade de Campina Grande e foi construído por causa da seca que o Nordeste enfrentou de 1824 a 1828. Assim, a construção do açude pelo governo provincial paraibano foi iniciada em 1829 e concluída em 1831, sendo, por quase um século, o maior açude da região de Campina Grande."</cite></h4>
+            </div>
+            <div id="bg-infos2">
+                <h3 id="titulo-info2">AÇUDE NOVO</h3>
+                <h4 id="text-info2"><cite>O Açude Novo ou Parque Evaldo Cruz é um parque em formato circular que fica no Centro da cidade, próximo ao Parque do Povo. Atualmente trata-se de um parque de 46 875 m² com muitos bancos e árvores, assim como pequenos restaurantes que ficam em volta de uma fonte.</cite></h4>
+            </div>
+            <div id="bg-infos3">
+                <h3 id="titulo-info3">PARQUE DO POVO</h3>
+                <h4 id="text-info3"><cite>O Parque do Povo, onde é realizado O Maior São João do Mundo e o Encontro para a Consciência Cristã, possui uma área de 42 mil e 500 metros quadrados situada no centro de Campina Grande.</cite></h4>
+            </div>
+        </section>
+        <aside>
+            <div id="barra-direitaBG">
+                <h4 id="titulo-video" >SEGUE O VÍDEO!</h4>
+                <iframe id="video-lateral" src="videos/Conhecendo Campina Grande - A segunda maior cidade da Paraíba.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            </div>
+        </aside>
     </main>
-        <aside id="barra-lateral-pesquisa">
-            <h3 id="titulo-barralateral">ENCONTRE AQUI</h3>
-            <input id="barra-pesquisa" type="search" placeholder="NOTICIAS">
-        </aside> 
+    <footer>
+        <!--botão de voltar ao inicio-->
+        <div id="down-infosbg">
+            <a href="Cgfound.html" id="tapto-head"><span id="text-button">VOLTAR AO INÍCIO</span> </a>
+        </div>    
+    </footer>
 </body>
 </html>

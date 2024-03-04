@@ -4,11 +4,12 @@
     background-repeat: no-repeat;
     background-color: rgb(241, 241, 241);
 }
+
 /*barra principal + menus + logos */
 .barra-principal {
     background: darkolivegreen;
     width: 100vw;
-    height: 60px;
+    height: 70px;
     position: fixed;  
     z-index: 2;   
 }
@@ -18,31 +19,34 @@
     color:aliceblue;
     background:transparent;
     display: inline-block;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-left: 20px;
     position: fixed;
     
 }
 #mutirao:hover{
-    border-bottom: 3px white solid;
-    border-left:transparent;
-    border-right:transparent;
-    border-top:transparent;   
-    opacity: 0.8;
+    background: whitesmoke;
+    color:darkolivegreen;
+    border-radius:10px;
+    border: 3px whitesmoke solid;
+    font-size:20px;
+    
+
+
 }
 #serrotao:hover{
-    border-bottom: 3px white solid;
-    border-left:transparent;
-    border-right:transparent;
-    border-top:transparent;   
-    opacity: 0.8;
+    background: whitesmoke;
+    color:darkolivegreen;
+    border-radius:10px;
+    border: 3px whitesmoke solid;
+    font-size:20px;
 }
 #centro:hover{
-    border-bottom: 3px white solid;
-    border-left:transparent;
-    border-right:transparent;
-    border-top:transparent;   
-    opacity: 0.8;
+    background: whitesmoke;
+    color:darkolivegreen;
+    border-radius:10px;
+    border: 3px whitesmoke solid;
+    font-size:20px;
 }
 .menus {
     font-size:20px;
@@ -52,7 +56,7 @@
     display:grid;
     background: transparent;
     position: fixed;
-    margin-top:10px;
+    margin-top:13px;
 }
 #serrotao {
     width: 106px;
@@ -61,62 +65,43 @@
 }
 #mutirao {
     width: 95px;
-    margin-left:1000px;
+    margin-left:1400px;
 }
 #centro {
     width: 80px;
-    margin-left:800px;
+    margin-left:1000px;
 }
 /* pagina principal*/
 #barra-rolagem {
-    background: whitesmoke;
-    width: 60vw;
+    background: darkolivegreen;
+    border-radius:10px;
+    width: 560px;
     height: 50px;
     display: grid;
-    margin-left:120px;
-    margin-top:100px;
+    margin-left:0px;
+    margin-top:105px;
     position: absolute;
-    z-index: 0;
-    border-top:5px darkolivegreen solid;
+    z-index: 0;  
+ 
+}
+#subtitulo-barrarolagem {
+    font-size:25px;
+    font-family: sans-serif;
+    color:darkolivegreen;
+    border-radius:5px;
+    margin-left:-455px;
+    margin-top: 15px;
+    position: absolute;
+    
+
 }
 #titulo-barra {
     background: transparent;
     font-size: 40px;
-    font-family: fantasy;
+    font-family: prompt;
     padding: 10px;
-}
-#titulo-barra:hover{
-    opacity: 0.9;
-}
-/*barra lateral de pesquisa*/
-#barra-lateral-pesquisa {
-    width: 20%;
-    height: 110px;
-    background: white;
-    margin-left:1250px;
-    margin-top:100px;
-    display:grid;
-    position: absolute;
-    border-top: 15px darkolivegreen solid;
-}
-#titulo-barralateral {
-    background: transparent;
-    color:darkolivegreen;
-    position: absolute;
-    margin-left:55px;
-    margin-top:20px;
-    font-size:26px;
-
-    
-}
-#barra-pesquisa {
-    width: 200px;
-    height: 30px;
-    background:rgb(144, 160, 119);
-    border:black 2px solid;
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 65px;  
+    margin-top: -15px;
+    color:whitesmoke
 }
 /* Posts da pagina principal */
 .defaults-post {
@@ -124,6 +109,7 @@
     height: 300px;
     position: absolute;
     display: grid;
+    margin-top: ;
 }
 /* elementos padrões dos posts*/
 .links-posts {
@@ -140,25 +126,60 @@
     border-radius: 20px 20px 20px 20px;
 }
 /*elementos especificos dos posts*/
+#barra-firstposts {
+    width: 100vw;
+    background: white;
+    height: 400px;
+    z-index: 0;
+    position: absolute;
+    margin-top:250px;
+    display: grid;
+    box-shadow:5px 10px 30px -9px     
+}
+#style-lateral {
+    width: 350px;
+    height: 430px;
+    background: darkolivegreen;
+    display: grid;
+    position: absolute;
+    margin-top: -14px;
+    box-shadow:1px 1px 5px 0px
+}
+#style-laterallegend{
+    background: transparent;
+    position: absolute;
+    display: grid;
+    color:white;
+    font-family:prompt;
+    margin-left:60px;
+    margin-top:130px;
+    font-size:40px; 
+    padding: -3px;
+    box-shadow:1px 1px 10px 0px;
+    text-align: center;
+    
+
+}
 /*first post*/
 #text-post1 {
     position:absolute;
     z-index:1;
-    font-size:35px;
+    font-size:21px;
     text-align:center;
     background: whitesmoke;
     position: absolute;
     margin-top: 22px;   
     margin-left: 80px;
-    color:darkolivegreen;
+    color:rgb(0, 0, 0);
     width: 210px;
-    font-family: fantasy;
+    font-family: prompt;
     z-index: 1;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 1px;
 }
 #post1 {
-    margin-top: 180px;
-    margin-left: 10px;
+    margin-top: 50px;
+    margin-left: 380px;
 }
 #post1:hover{
     opacity: 0.9;
@@ -166,130 +187,224 @@
 }
 /*second post*/
 #post2 {
-    margin-top:180px;
-    margin-left: 420px; 
+    margin-top:50px;
+    margin-left: 790px; 
 }
 #text-post2 {
     position:absolute;
     z-index:1;
-    font-size:35px;
+    font-size:21px;
     text-align:center;
     background: whitesmoke;
     position: absolute;
     margin-top: 22px;       
     margin-left: 80px;
-    color:darkolivegreen;
+    color:rgb(0, 0, 0);
     width: 210px;
-    font-family: fantasy;
+    font-family: prompt;
     z-index: 1;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 1px;
 }
 #post2:hover{
     opacity:0.9;
 }
 /*Third post*/
 #post3 {
-    margin-top:180px;
-    margin-left: 830px; 
+    margin-top:50px;
+    margin-left: 1200px; 
 }
 #text-post3 {
     position:absolute;
     z-index:1;
-    font-size:35px;
+    font-size:23px;
     text-align:center;
     background: whitesmoke;
     position: absolute;
     margin-top: 22px;   
     margin-left: 80px;
-    color:darkolivegreen;
+    color:black;
     width: 210px;
-    font-family: fantasy;
+    font-family:prompt;
     z-index: 1;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 1px;
 }
 #post3:hover{
     opacity:0.9;
 }
-/*Four post*/
-#post4 {
-    margin-top:500px;
-    margin-left: 830px; 
-}
-#text-post4 {
-    position:absolute;
-    z-index:1;
-    font-size:35px;
-    text-align:center;
-    background: whitesmoke;
+/*barra lateral de informações*/
+/*1 barra*/
+#bg-infos1 {
+    width: 815px;
+    height: 260px;
     position: absolute;
-    margin-top: 22px;   
-    margin-left: 80px;
-    color:darkolivegreen;
-    width: 210px;
-    font-family: fantasy;
     z-index: 1;
-    border-radius: 10px
+    background: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top:750px;
+    box-shadow: 2px 1px 10px 0px;
+    border-radius:10px;
 }
-#post4:hover{
-    opacity:0.9;
-}
-/*Five Post*/
-#post5 {
-    margin-top:500px;
-    margin-left: 420px; 
-}
-#text-post5 {
-    position:absolute;
-    z-index:1;
-    font-size:35px;
-    text-align:center;
-    background: whitesmoke;
+#titulo-info1 {
     position: absolute;
-    margin-top: 22px;   
-    margin-left: 80px;
-    color:darkolivegreen;
-    width: 210px;
-    font-family: fantasy;
-    z-index: 1;
-    border-radius: 10px
+    color:white;
+    display: grid;
+    margin: 6px;
+    margin-left:5px;
+    background: darkolivegreen;
+    padding: 10px;
+    font-family:sans-serif;
+    font-size:25px;
+    border-radius: 10px 1px 10px 1px;
 }
-#post5:hover{
-    opacity:0.9;
-}
-#text-post5:hover{
-    color:olivedrab;
-    font-size:36px;
-}
-
-/*Six post*/
-#post6 {
-    margin-top:500px;
-    margin-left: 10px; 
-}
-#text-post6 {
-    position:absolute;
-    z-index:1;
-    font-size:35px;
-    text-align:center;
-    background: whitesmoke;
+#text-info1 {
     position: absolute;
-    margin-top: 22px;   
-    margin-left: 80px;
-    color:darkolivegreen;
-    width: 210px;
-    font-family: fantasy;
+    display: grid;
+    margin: 10px;;
+    background: transparent;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right:30px;
+    font-size:21px;
+    font-family:prompt;
+
+}
+/*2 barra*/
+#bg-infos2 {
+    width: 815px;
+    height: 260px;
+    position: absolute;
+    z-index: 0;
+    background: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top:1040px;
+    box-shadow: 2px 1px 10px 0px;
+    border-radius:12px;
+}
+#titulo-info2 {
+    position: absolute;
+    color:white;
+    display: grid;
+    margin: 6px;
+    margin-left:5px;
+    background: darkolivegreen;
+    padding: 10px;
+    font-family:sans-serif;
+    font-size:25px;
+    border-radius: 10px 1px 10px 1px;
+}
+#text-info2 {
+    position: absolute;
+    display: grid;
+    margin: 10px;;
+    background: transparent;
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-right:30px;
+    font-size:21px;
+    font-family:prompt;
+}
+/*3 barra*/
+#bg-infos3 {
+    width: 815px;
+    height: 260px;
+    position: absolute;
+    z-index: 0;
+    background: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top:1330px;
+    box-shadow: 2px 1px 10px 0px;
+    border-radius:12px;
+}
+#text-info3 {
+    position: absolute;
+    display: grid;
+    margin: 10px;;
+    background: transparent;
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-right:30px;
+    font-size:21px;
+    font-family:prompt;
+}
+#titulo-info3 {
+    position: absolute;
+    color:white;
+    display: grid;
+    margin: 6px;
+    margin-left:5px;
+    background: darkolivegreen;
+    padding: 10px;
+    font-family:sans-serif;
+    font-size:25px;
+    border-radius: 10px 1px 10px 1px;
+}
+/* RODAPÉ */
+#down-infosbg {
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    display: grid;
+    background: rgb(91, 110, 57);
+    margin-top: 100vw;
+    box-shadow: 10px 10px 10px 5px;
+    z-index: 0;   
+}
+/*rodapé butão*/
+#tapto-head{
+    width: 100vw;
+    height: 50px;
+    position:absolute;
+    display:grid;
+    text-align:center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: prompt;
+    box-shadow:10px 1px 10px 0px;
+    color: olivedrab;
+}
+#text-button {
+    margin-top: 3px;
+    color:olivedrab
+}
+#text-button:hover {
+    color:olive;   
+}
+/*barra direita*/
+#barra-direitaBG {
+    height: 550px;
+    width: 700px;
+    display: grid;
     z-index: 1;
-    border-radius: 10px
+    background: white;
+    position: absolute;
+    margin-top: 750px;
+    margin-left: 900px;
+    border-radius:10px;
+    box-shadow:0px 1px 10px 0px;
 }
-#post6:hover{
-    opacity:0.9;
-}
-#text-post6:hover{
-    color:olivedrab;
-    font-size:36px;
-}
-
-
-
+#video-lateral {
+    width: 650px ;
+    height: 470px;
+    margin-left: 25px;
+    margin-top:60px;
+    z-index:1;
+    position: absolute;
+    display: grid;
+    border-radius: 10px;
     
+}   
+#titulo-video {
+    background: transparent;
+    margin-top: 5px;
+    margin-left:5px;
+    font-size:30px;
+    height:40px;
+    border-radius:10px 0px 10px 0px;
+    color:white;
+    font-family: prompt;
+    background: darkolivegreen;
+}
+
 
